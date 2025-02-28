@@ -2,10 +2,6 @@ import { ThreadMessage } from "@/types/chat";
 import { getInitializedAdapter } from "../supabase/config";
 import { 
   DefaultReplyToMessage,
-  SendEmailFromAgent, 
-  ConfirmTaskCompletion,
-  ConstructEmail,
-  taskActionConfirmation,
   verifyAgentIdentity
 } from "../workflows/basic_workflow";
 import { 
@@ -94,50 +90,11 @@ export async function triageMessage({
           sender_number
         )
         
-
       break;
 
       case 'handleEmailAction':
-        console.log('Running Email Workflow')
-        // Triage to send an email using the agent's email address
-        
-        const emailDraft = await ConstructEmail(threadMessages)
-              
-        // Get user confirmation and send email
-        // const confirmedEmail = await taskActionConfirmation(threadMessages, emailDraft);
-       
-        await SendEmailFromAgent(
-          emailDraft, 
-          thread_type as "individual" | "group", 
-          thread_id, 
-          sender_number
-        );
-
-        // Send confirmation message back to user
-        await ConfirmTaskCompletion(
-          messages,
-          thread_type as "individual" | "group", 
-          thread_id,
-          sender_number
-        );
+        // Remove this entire case
         break;
-
-      // case 'taskActionConfirmation':
-      //   console.log('Running Task Confirmation Workflow')
-      //   // Confirm completion of a specific task
-      //   await ConfirmTaskCompletion(
-      //     messages,
-      //     thread_type as "individual" | "group",
-      //     thread_id,
-      //     sender_number
-      //   );
-      //   break;
-        
-      // case 'followUpResponse':
-      //   console.log('Running Follow Up Response')
-      //   // Triage to ask a follow up question
-        
-      //   break;
         
       case 'simpleResponse':
       default:

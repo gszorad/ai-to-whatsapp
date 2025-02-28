@@ -5,9 +5,6 @@
  * Key workflow functions:
  * - verifyAgentIdentity: Sends identity verification message
  * - DefaultReplyToMessage: Generates and sends simple response  
- * - ConstructEmail: Creates email draft from thread messages
- * - SendEmailFromAgent: Sends composed email via agent
- * - ConfirmTaskCompletion: Confirms task completion with user
  * 
  * Uses OpenAI for generating contextual responses.
  * Handles both individual and group message threads.
@@ -288,30 +285,6 @@ export async function SendEmailFromAgent(
 // Shows task details, waits for approval, executes if approved,
 // then confirms completion or cancellation.
 // =====================================================================
-
-// Generate and send message to user to confirm before proceeding with task
-export async function taskActionConfirmation(threadMessages: ThreadMessage[], emailDraft: {
-    recipientEmail: string;
-    emailContent: {
-      subject: string;
-      body: string;
-    };
-}): Promise<{
-    recipientEmail: string;
-    emailContent: {
-      subject: string;
-      body: string;
-    };
-}> {
-    console.log("starting [taskActionConfirmation] workflow", {
-      message_count: threadMessages.length,
-      recipient: emailDraft.recipientEmail,
-      subject: emailDraft.emailContent.subject
-    });
-    // For now, just return the draft email as-is
-    // TODO: Implement actual user approval flow
-    return emailDraft;
-}
 
 // Sends confirmation message to user after task completion to maintain feedback loop
 export async function ConfirmTaskCompletion(

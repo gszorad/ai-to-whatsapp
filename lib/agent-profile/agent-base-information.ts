@@ -17,79 +17,83 @@ interface InformationSection {
 
 const baseInformation: InformationSection[] = [
   {
-    title: "Company Overview",
-    content: `A1Base is the human-facing communication, trust, and identity layer for AI agents. Founded in 2025, we provide the API to give AI Agents real-world capabilities like phone numbers, email addresses, and trusted identities.
+    title: "About Aware Parenting",
+    content: `Aware Parenting is an approach to child-rearing developed by Aletha Solter, Ph.D. that combines attachment parenting with insights about children's emotional needs and healing through crying. Founded in 1989, the Aware Parenting Institute provides resources, training, and support for parents seeking a compassionate, non-punitive approach to raising children.
 
-Our mission is to help developers build AI Agents that people can partner with and rely on as trusted allies—always with a human-first mindset. We believe that in the near future, AI Agents and human coworkers will enable us to pursue more creative and impactful work.
+Our mission is to help parents understand and respond sensitively to their children's feelings and needs, creating secure attachments and emotional well-being. We believe that children's crying serves a healing function when supported by loving attention from parents.
 
-A1Base was founded by two developers determined to bring powerful AI Agents to everyday people. We recognized the need for a user-friendly API, a strong layer of trust and regulatory standards, and a human-first approach to AI development.`,
+The Aware Parenting approach was developed by Dr. Aletha Solter, a Swiss/American developmental psychologist, international speaker, consultant, and founder of the Aware Parenting Institute.`,
     priority: 10,
   },
   {
-    title: "Leadership Team",
-    content: `Our founders:
+    title: "Core Principles",
+    content: `Key aspects of Aware Parenting include:
 
-Pasha Rayan - Co-founder and CEO
-- Previous CTO and co-founder of Forage (YC, Lightspeed, Blackbird backed)
-- Helped over 5 million students learn about 100+ tier-1 enterprises
-- Contact: pasha@a1base.com
-
-Pennie Li - Co-founder and CTO
-- Early engineer at Forage with 6 years experience across engineering, product and growth
-- Former CTO of Truffle (consumer food tracking app)
-- Computer Science and Commerce graduate from UNSW
-- Contact: pennie@a1base.com`,
+- Attachment-style parenting from birth
+- Non-punitive discipline without rewards or punishments
+- Understanding crying and tantrums as stress-release
+- Supporting children's play and laughter for emotional health
+- Recognizing and healing parents' own childhood experiences
+- Building authentic connections between parents and children
+- Responding with empathy to children's emotional needs`,
     priority: 9,
   },
   {
-    title: "Core Platform Capabilities",
-    content: `A1Base enables AI agents to:
-- Join and participate in WhatsApp groups & chats
-- Send & receive emails through dedicated addresses
-- Access and analyze group chat history
-- Get dedicated verified phone numbers
-- Send quality, spam-free messages
-- Interact with other AI agents
-
-Our platform provides:
-- Easy Integration: Simple API that takes minutes to implement
-- Verified Identity: Anti-spam protection and trusted agent verification
-- Multiple Channels: Support for WhatsApp, SMS, Email and more`,
+    title: "Resources and Support",
+    content: `Aware Parenting offers:
+- Books and articles by Dr. Aletha Solter
+- Certified Aware Parenting instructors worldwide
+- Workshops and training programs
+- Support groups and community connections
+- Resources in multiple languages
+- Individual consultations
+- Regular newsletters and updates`,
     priority: 8,
   },
   {
-    title: "Technical Integration",
-    content: `A1Base works seamlessly with any AI model or service, including OpenAI, Anthropic, or custom models. The platform provides a simple API for implementing real-world communication capabilities.
-
-Key features include:
-- Verified, spam-free communication channels
-- Built-in identity verification and trust mechanisms
-- Support for multiple programming languages including Node.js, Python, and direct API access
-- Comprehensive developer resources and documentation`,
+    title: "Key Concepts",
+    content: `Core concepts of Aware Parenting include:
+- Attachment parenting practices
+- Understanding crying as stress release
+- Non-punitive discipline approaches
+- The importance of play in emotional health
+- Healing childhood trauma
+- Building authentic parent-child relationships
+- Supporting children's emotional expression`,
     priority: 7,
   },
   {
-    title: "Common Use Cases",
-    content: `Common scenarios include:
-- Setting up AI agents with verified phone numbers and email addresses
-- Integrating AI agents into WhatsApp groups for business communication
-- Implementing secure, spam-free messaging capabilities
-- Enabling AI agent-to-agent communication
-- Creating AI coworkers that can handle real-world communications
-- Building AI-native applications without traditional SaaS interfaces`,
+    title: "Common Applications",
+    content: `Aware Parenting helps with:
+- Building secure attachment bonds
+- Managing challenging behaviors without punishment
+- Supporting children through emotional release
+- Developing authentic parent-child connections
+- Healing generational trauma patterns
+- Creating peaceful family relationships
+- Understanding child development stages`,
     priority: 6,
   },
   {
-    title: "Company Information",
-    content: `Location: San Francisco, CA 94107
-Backed by: Y Combinator
+    title: "Contact Information",
+    content: `Contact the Aware Parenting Institute:
+Email: info@awareparenting.com
+Phone/Fax: +1 (805) 968 1868
+Mailing Address: P.O. Box 206, Goleta, CA 93116, USA
 
-Connect with us:
-- Developer Resources: api.a1base.com/docs
-- GitHub: github.com/a1base
-- Discord Community: discord.gg/a1base
-- Twitter: twitter.com/a1base
-- LinkedIn: linkedin.com/company/a1base`,
+Contact Dr. Aletha Solter:
+Email: solter@awareparenting.com or info@awareparenting.com
+Phone/Fax: +1 (805) 968 1868
+Mailing Address: Same as institute
+
+Important Notes:
+- Leave voicemail with your question, best time to reach you, and time zone
+- International calls are not returned
+- Dr. Solter offers consultations but does not give advice via email/Facebook
+- For foreign language rights, contact Dr. Solter directly
+- Find local instructors: Visit awareparenting.com and select your country's flag
+- For parent support: Visit our Parent Support page
+- For instructor certification: See Certification Requirements page`,
     priority: 5,
   }
 ];
