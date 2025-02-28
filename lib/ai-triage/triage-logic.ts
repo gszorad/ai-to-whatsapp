@@ -33,7 +33,6 @@ type TriageParams = {
 // in basic_workflow.ts. Currently triages for:
 // - Simple response to one off message
 // - Sharing A1 Agent Identity card
-// - Drafting and sending an email
 // ===================================================================
 export async function triageMessage({
   thread_id,
@@ -91,11 +90,7 @@ export async function triageMessage({
         )
         
       break;
-
-      case 'handleEmailAction':
-        // Remove this entire case
-        break;
-        
+      
       case 'simpleResponse':
       default:
         console.log('Running Default Response')

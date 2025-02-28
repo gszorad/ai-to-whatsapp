@@ -14,9 +14,6 @@ type ChatRole = "system" | "user" | "assistant" | "function"
  * ============= OPENAI CALL TO TRIAGE THE MESSAGE INTENT ================
  * This function returns one of the following responseTypes:
  *  - simpleResponse: Provide a simple response
- *  - followUpResponse: Follow up on the message to gather additional information
- *  - handleEmailAction: Draft email and await user approval for sending
- *  - taskActionConfirmation: Confirm with user before proceeding with requested task (i.e before sending an email)
  * =======================================================================
  */
 export async function triageMessageIntent(threadMessages: ThreadMessage[]): Promise<{ 
