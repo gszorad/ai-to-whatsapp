@@ -45,7 +45,7 @@ export async function verifyAgentIdentity(
 ) {
   console.log("Workflow Start [verifyAgentIdentity]");
 
-  const agentIdCard = 'https://www.a1base.com/identity-and-trust/8661d846-d43d-4ee7-a095-0dcc97764b97'
+  const agentIdCard = 'https://www.a1base.com/identity-and-trust/cd70954a-ab48-4d4d-af90-4d6ab5084bef'
 
   try {
     
